@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+ 
+<html>
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0">
+  <head>
+    <title>Age Calculator</title>
+  </head>
+  
+  <body>
+  <div class="loob">
+  <center>
+<h1 class="heading">AGE CALCULATOR</h1>
+
+<p class="enter">Enter your name: <input type="String" id="name" class="input_text"/></p>
+<p class="enter">Month: <input type="number" id="month" class="input_text" min="1" max="12" onKeyUp="if(this.value>12){this.value='12';}"/></p>
+<p class="enter">Day:  <input type="number" id="day" class="input_text" min="1" max="31" onKeyUp="if(this.value>31){this.value='31';}"/></p>
+<p class="enter">Year: <input type="number" id="year" class="input_text" min="100" max="2020" onKeyUp="if(this.value>2020){this.value='2020';}"/></p>
+
+<br><input type="submit" value="Enter" class="btn_enter" onclick="convert();"></br>
+  <h3><span id="output" class="outputhere"></span></h3>
+ </center>
+  </div>
+  </body>
+   <div class="footer">
+    <p>copyright© trisha castillo</p>
+    </div>
+          <!--------JAVASCRIPT------------>
+ <script type="text/javascript">
+ 
+ function convert() {
+ 
+ var username =document.getElementById("name").value;
+ var birthyear = document.getElementById("year").value;
+ var birthmonth = document.getElementById("month").value;
+ var birthday = document.getElementById("day").value;
+ 
+ var month="";
+ if (birthmonth == 1) w_month="January";
+ if (birthmonth == 2) w_month="February";
+ if (birthmonth == 3) w_month="March";
+ if (birthmonth == 4) w_month="April";
+ if (birthmonth == 5) w_month="May";
+ if (birthmonth == 6) w_month="June";
+ if (birthmonth == 7) w_month="July";
+ if (birthmonth == 8) w_month="August";
+ if (birthmonth == 9) w_month="September";
+ if (birthmonth == 10) w_month="October";
+ if (birthmonth == 11) w_month="November";
+ if (birthmonth == 12) w_month="December";
+
+
+ var answer = 2021-birthyear;
+ var birthdate=w_month+" "+birthday+", "+birthyear;
+ 
+document.getElementById("output").innerText="Hi "+username+"!\n"+birthdate+" is your birtday.\nYou're "+answer+" already huh?";
+ }
+   
+</script>
+ 
+ <style>
+ 
+ .footer {
+        background: #acb3b9;            
+        text-align: center;
+        padding: 5px;
+}
+</style>
+ 
+ 
+ 
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+ 
+<html>
+ <!--<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0">-->
+  <head>
+    <title>Age Calculator</title>
+  </head>
+
+<body>
+
+   <div class="header">
+   <h1>AGE CALCULATOR v2</h1>
+   </div>
+   
+     <center>
+    <div class="level1">
+    <p><label class="form">Date Birth:</label><input type="date" class="textbox" id="bDay" onchange="cal()"</p>
+    <p><label class="form">Today:</label><input type="date" class="textbox" id="toDay" onchange="cal()"/></p>
+    </div>
+    </center>
+    
+     <div class="container">
+  <div style="float: left;">AGE<h3><span id="years"></span>years</h3><p id="months"></p> months | <p id="days"> days</p></div>
+  
+  <div style="float: right;">Right Div</div>
+</div>
+    </body>
+    
+    
+    
+    <div class="footer">
+    <p>copyright© trisha castillo</p>
+    </div>
+    
+
+
+
+
+
+
+<style>
+
+body {
+   font: 16px Arial,sans-serif; 
+   margin: 0px;
+}
+.header {
+        padding: 8px 12px;
+        background: #acb3b9; 
+}
+.container { 
+     overflow: hidden;
+     margin-left: 150px;
+     margin-right: 150px; }
+
+.level1 {
+    width: 70%;
+    padding: 12px;
+    border: 3px solid navy;
+    margin: 8px;
+}
+.level2 {
+    width: 70%;
+    padding: 12px;
+    border: 3px solid navy;
+    margin: 8px;
+}
+ 
+.footer {
+        background: #acb3b9;            
+        text-align: center;
+        padding: 5px;
+}
+
+
+</style>
+ 
+ <script type="text/javascript">
+    
+ function GetDays(){
+ var bd = new Date(document.getElementById("bDay").value);
+ var td = new Date(document.getElementById("toDay").value);
+                
+ return parseInt((td - bd) / (24 * 3600 * 1000)); }
+
+ function GetWeeks(){
+ var bd = new Date(document.getElementById("bDay").value);
+ var td = new Date(document.getElementById("toDay").value);
+                
+ return parseInt((td - bd) / (24 * 3600 * 1000 *7)); }
+ 
+ function GetMonths(){
+ var bd = new Date(document.getElementById("bDay").value);
+ var td = new Date(document.getElementById("toDay").value);
+                
+ return parseInt((td - bd) / (24 * 3600 * 1000 *30)); }
+ 
+ function GetYears(){
+ var bd = new Date(document.getElementById("bDay").value);
+ var td = new Date(document.getElementById("toDay").value);
+                
+ return parseInt((td - bd) / (24 * 3600 * 1000 *365)); }
+ 
+ 
+ 
+    function cal(){
+        document.getElementById("days").innerText=GetDays();
+        document.getElementById("months").innerText=GetMonths();          
+        document.getElementById("years").innerText=GetYears();
+    }
+
+    </script>
+ 
+ 
+</html>
