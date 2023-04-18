@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=.5">
+    <title>Document</title>
+  
+  
+</head>
+
+<body>
+  <div class="header">
+    <h1>KIDS MATH</h1>
+    </div>
+    <div class="scoreboard">
+    SCORE : <label id="tama">0</label>
+   
+    <label id="mali" style="display: "></label>
+    <label id="checking"></label>
+  </div>
+
+<div id="frame2" style="display: none" align="center">
+ <span id="p2"></span> <span id="operation"></span><span id="p1"></span><span id="equal"></span> 
+  <input type="number" id="ans" required></input>
+
+  
+   <button onclick="x()" id="nextbutton">Next</button>
+</div>
+<div id="start">
+<button type="button" onclick="document.getElementById('frame2').style.display='block'; document.getElementById('start').style.display='none';">Click Me!</button>
+</div>
+
+<div class="footer">
+  <p>copyright© trisha castillo</p>
+  </div>
+  
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+</body>
+
+</html>

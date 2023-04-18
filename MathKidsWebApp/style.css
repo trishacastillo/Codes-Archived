@@ -1,0 +1,40 @@
+.header {
+    padding: 8px 12px;
+    background: rgb(32, 102, 231);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
+}
+#frame2{
+    padding: 8px 12px;
+}
+#p1, #p2, #equal{
+    font-size: 4em;
+    color: rgb(121, 35, 202);
+}
+#operation, #ans{
+    font-size: 4em;
+    color: rgb(81, 175, 109);
+}
+#ans{
+   font-weight: bold;
+   width: 1.4em;
+}
+#tama, #mali{
+    font-size: 1.9em;
+    color: rgb(152, 202, 35);
+}
+.scoreboard{
+    font-size: 1em;
+    color: rgb(202, 35, 152);
+}
+.footer {
+    background: #acb3b9;            
+    text-align: center;
+    padding: 5px;
+    font-size: .8em;
+    font-weight: lighter;
+}
